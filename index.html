@@ -515,4 +515,12 @@
             if (page) {
                 page.classList.add('active');
             }
-            const navLink = document.getEleme
+            const navLink = document.getElementById('nav-' + pageId);
+            if (navLink) navLink.classList.add('active');
+            window.scrollTo(0, 0);
+        }
+        // Activate home on load
+        showPage('home');
+    </script>
+</body>
+</html>
