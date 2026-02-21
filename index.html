@@ -680,9 +680,6 @@
         function showPage(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-            const navId = 'nav-' + page;
-            const activeLink = document.getElementById(navId);
-            if (activeLink) activeLink.classList.add('active');
             const page = document.getElementById('page-' + pageId);
             if (page) {
                 page.classList.add('active');
